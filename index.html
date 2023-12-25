@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO List By JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 id="main-header">To Do List</h2>
+    <div class="row">
+      <input id="todo-input" type="text" placeholder="Enter TODO here..." />
+      <button onclick="addItems()">Add Item</button>
+      <div class="todo-container"></div>
+    </div>
+
+    <script>
+      let todoList = ["Buy Milk", "Come Here"];
+      displayItems();
+      function addItems() {
+        let iEle = document.querySelector("#todo-input");
+        let todoItem = iEle.value;
+        todoList.push(todoItem);
+        iEle.value = "";
+        displayItems();
+      }
+
+      function displayItems() {
+        let containerElement = document.querySelector(".todo-container");
+
+        let newHtml = "";
+
+        for (let i = 0; i < todoList.length; i++) {
+          newHtml += `<div><span>${todoList[i]}</span>
+              <button onclick="todoList.splice(${i}, 1); displayItems();">Delete</button> </div> 
+            `;
+          containerElement.innerHTML = newHtml;
+        }
+      }
+    </script>
+  </body>
+</html>

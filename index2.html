@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hey</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        width: 300px;
+        border: 1px solid black;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Select parent element -->
+    <!-- <ul >
+            <li id="intro">list1</li>
+            <li >list2</li>
+            <li >list3</li>
+            <li >list4</li>
+        </ul> -->
+
+    <!-- Select firstEleementChild, lastEleementChild. children -->
+    <!-- <ul id="intro">
+            <li >list1</li>
+            <li >list2</li>
+            <li >list3</li>
+            <li >list4</li>
+        </ul> -->
+
+    <!-- Select Siblings -->
+    <!-- <ul>
+      <li>list1</li>
+      <li id="intro">list2</li>
+      <li>list3</li>
+      <li>list4</li>
+    </ul> -->
+
+    <!-- Access and change innerHTML -->
+    <!-- <ul id="intro">
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+    </ul> -->
+
+    <!-- Append Childern -->
+    <!-- <ul id="intro">
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+    </ul> -->
+
+    <!-- insertBefore -->
+    <ul id="intro">
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+    </ul>
+
+    <script>
+      // select parent element
+      // let a = document.getElementById('intro').parentElement;
+      // console.log(a)
+
+      // select firstElementChild
+      // let b = document.getElementById('intro').firstElementChild;
+      // console.log(b)
+
+      // select lastElementChild
+      //   let c = document.getElementById("intro").lastElementChild;
+      //   console.log(c);
+
+      // select all the childerns of the parent
+      //   let d = document.getElementById('intro').children;
+      //   console.log(d)
+
+      // select previousElementSibling
+      //   let e = document.getElementById('intro').previousElementSibling;
+      //   console.log(e)
+
+      // select nextElementSibling
+      //   let f = document.getElementById("intro").nextElementSibling;
+      //   console.log(f);
+
+      //   access and change innerHTML
+      //   let g = document.getElementById("intro");
+      // console.log(g.innerHTML)
+      //   console.log(g.innerHTML = "<h3>Hey Man</h3>");
+
+      //   createElement and appendChild
+      //   let h = document.getElementById("intro");
+
+      //   let ele = document.createElement("h1");
+      //   1st way
+      //   let txt = document.createTextNode("Hey there");
+      //   ele.appendChild(txt);
+
+      // 2nd way
+      //   ele.textContent = "Hey there";
+
+      //   h.appendChild(ele);
+
+    //   insertBefore
+    //   let i = document.getElementById("intro");
+
+    //   let pos = i.firstElementChild;
+    //   let pos1 = i.firstElementChild.nextElementSibling;
+    //   let pos2 = i.firstElementChild.nextElementSibling.nextElementSibling;
+    //   let pos3 = i.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling;
+
+    //   let ele = document.createElement("h2");
+    //   ele.textContent = "Hey!";
+
+    //   i.insertBefore(ele, pos3);
+
+
+    </script>
+  </body>
+</html>
