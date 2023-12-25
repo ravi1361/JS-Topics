@@ -25,7 +25,6 @@ parent.cloneNode(true),
 
 parent.replaceChild(ele, pos)
 
-here pos = beforebegin, afterbegin, beforeend, afterend
+here pos = beforebegin, afterbegin, beforeend, afterend,
+
 parent.insertAdjacentHTML('pos', ele)
-
-
