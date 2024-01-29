@@ -4,6 +4,9 @@ let e = 20;
 e = 30;
 console.log(b);
 
+const w = 20;
+console.log(w);
+
 const data = {
   products: [
     {
