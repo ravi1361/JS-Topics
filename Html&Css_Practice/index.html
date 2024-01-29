@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html & CSS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+      }
+      .page1 {
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #00050d;
+        color: #fff;
+      }
+
+      .input {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        /* max-width: 80vw; */
+      }
+
+      .input img {
+        background: #bdbaba;
+        height: 40px;
+        padding: 0 10px;
+        margin-right: -20px;
+        border-right: 3px solid #bdbaba;
+      }
+
+      .input input {
+        /* border: none; */
+        height: 40px;
+        border-left: 0px;
+        border-radius: 4px;
+        max-width: 30vw;
+      }
+      .en {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .page2 {
+        min-width: 300vw;
+        /* scroll-behavior: auto; */
+      }
+
+      .page2 ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .page2 ul video {
+        height: 70vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="page1">
+        <img
+          src="/Videos_Images/Amazon_Prime_Clone/amazon-155631949.jpg"
+          alt=""
+        />
+
+        <div class="input">
+          <img src="/Videos_Images/Amazon_Prime_Clone/Logo-min.png" alt="" />
+          <input type="text" placeholder="Search Amazon" />
+          <img src="/Videos_Images/Amazon_Prime_Clone/MLT_Icon_x2.png" alt="" />
+        </div>
+        <div class="en">
+          <img
+            src="/Videos_Images/Amazon_Prime_Clone/gettyimages-144076262-612x612.jpg"
+            alt=""
+          />
+          <h5>EN</h5>
+        </div>
+
+        <div class="signin-text">
+          <h5>Hello, sign in</h5>
+          <h4><b>Accounts & Lists</b></h4>
+        </div>
+
+        <div class="return-text">
+          <h5>Returns</h5>
+          <h4><b>& Odrers</b></h4>
+        </div>
+
+        <div class="cart">cart</div>
+      </div>
+      <div class="page2">
+        <ul>
+          <li>
+            <video
+              src="/Videos_Images/Amazon_Prime_Clone/FOE1_2023_Post_15s_TogetherPrime.mp4"
+              muted
+              loop
+              autoplay
+            ></video>
+          </li>
+          <li>
+            <video
+              src="/Videos_Images/Amazon_Prime_Clone/db1b3ac9-48b9-456b-b8e8-487ecfe6f110_video_720p_2500kbps_audio_aaclc_128kbps.mp4"
+              muted
+              loop
+              autoplay
+            ></video>
+          </li>
+          <li>
+            <video
+              src="/Videos_Images/Amazon_Prime_Clone/ATQM_Hell_To_Pay_Cutdown_15_Safe_Now_Streaming_16x9_UNPAID.mp4"
+              muted
+              loop
+              autoplay
+            ></video>
+          </li>
+          <li>
+            <video
+              src="/Videos_Images/Amazon_Prime_Clone/231127_Vera_S12_Christmas_AmazonFR.mp4"
+              muted
+              loop
+              autoplay
+            ></video>
+          </li>
+        </ul>
+      </div>
+      <div class="page3"></div>
+      <div class="page4"></div>
+    </div>
+  </body>
+</html>
